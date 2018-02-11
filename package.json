@@ -1,0 +1,16 @@
+{
+  "name": "client-notification-service",
+  "version": "0.0.1",
+  "description": "Takes notification messages from Amazon DynamoDB and pushes them to clients via websocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "geej",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
