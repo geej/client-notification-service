@@ -12,7 +12,7 @@ io.on('connection', (socket) => {
   socket.emit('message', 'Connection established.');
 });
 
-app.use(bodyParser.text());
+app.use(bodyParser.json());
 app.post('/', (req, res) => {
   console.log(req.body);
   io.to('default').emit('message', req.body);
