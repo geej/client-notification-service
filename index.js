@@ -14,6 +14,7 @@ io.on('connection', (socket) => {
 
 app.use(bodyParser.json());
 app.post('/', (req, res) => {
+  console.log(req);
   console.log(req.body);
   io.to('default').emit('message', req.body);
   res.sendStatus(200);
